@@ -1,3 +1,4 @@
+
 *{
   margin: 0px;
   padding: 0px;
@@ -25,6 +26,7 @@ body{
 html{
  color: white;
  background-color: rgb(2, 2, 68);
+ scroll-behavior: smooth;
 }
 
 .header{
@@ -177,10 +179,10 @@ img:hover{
  width: 800px;
  margin-top: 100px;
 }
-#about{
+.about{
   font-size: 25px;
   font-weight: 700;
-  margin-left: 600px;
+  margin-left:300px ;
   margin-top: 190px;
   display: block;
   justify-content: center;
@@ -192,11 +194,12 @@ color: rgb(255, 0, 234);
 
 .about h1{
   box-shadow:0 0 18px rgb(70, 3, 253);
-  width: 200px;
+  width: 250px;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
+  margin-left: 10px;
 }
 
 .img1 img{
@@ -216,7 +219,7 @@ color: rgb(255, 0, 234);
  box-shadow: 0 0 10px rgb(182, 136, 12),0 0 10px rgb(182, 136, 12);
 }
 
-#about p{
+.about p{
   font-size: 5px;
   font-weight: 700;
   margin-top: 190px;
@@ -224,22 +227,22 @@ color: rgb(255, 0, 234);
   width: 650px;
 } 
 
-#about p em{
+.about p em{
   font-size: 20px;
   color: aqua;
   gap: 5px;
   line-height: 33px  
 }
 
-#about hr{
+.about hr{
   color: #21059c;
   margin-top: 100px;
 }
-#services{
+.services{
   margin-top: 180px;
 }
 
-#services h2{
+.services h2{
   margin-left: 600px;
   font-size: 35px;
   font-weight: 600;
@@ -252,13 +255,13 @@ color: rgb(255, 0, 234);
   color: beige;
 }
 
-#services h2::first-letter{
+.services h2::first-letter{
   color: rgb(226, 43, 195);
   box-shadow: 0 0 10pa greenyellow;
 }
 
-#services p{
-  width: 400px;
+.services p{
+  width: 700px;
   margin-top: 80px;
   margin-left: 200px;
   font-size: 20px;
@@ -272,18 +275,18 @@ color: rgb(255, 0, 234);
   box-shadow: 0 0 15px aqua;
 }
 
-#services hr{
+.services hr{
   color: #21059c;
   width: 800px;
   margin-top: 100px;
 }
 
 #Skills{
-  margin-left: 600px;
+  margin-left: 500px;
   margin-top: 200px;
 }
 
- #Skills h1{
+#Skills h1{
   margin-top:100px;
   font-size: 40px;
   border: 2px solid rgb(4, 2, 83);
@@ -356,12 +359,16 @@ margin: 20px 0;
   width: 100%;
   max-width: 500px;
 }
-
+.contact
 .container{
-  width: 500px;
+  width: 100px;
   margin-left:550px;
   gap: 100px;
   margin-top: 100px;
+}
+
+.container:hover{
+  transition-property: 0.3s;
 }
 
 #Skills hr{
@@ -370,6 +377,7 @@ margin: 20px 0;
   900px;
   margin-top: 100px;
 }
+
 .left-panel h1{
  margin-top: 150px;
   font-size: 40px;
@@ -388,8 +396,8 @@ margin: 20px 0;
   color: rgb(201, 66, 149);
 }
 
-
 .left-panel p{
+  width: 400px;
   font-size: 22px;
   text-decoration: underline;
   color: #4CAF50;
@@ -399,6 +407,8 @@ margin: 20px 0;
 
 .right-panel form:hover{
  border-radius: 1px solid gray;
+  width: 600px;
+  transition-duration: 0.3s;
 }
 
 form{
@@ -406,10 +416,12 @@ form{
   padding: 25px;
   margin-left: -200px;
   outline: none;
+  margin-top: 50px;
 }
 
 form:hover{
   border: 2px solid blue;
+  border-radius: 20px;
 }
  
 .area{
@@ -421,8 +433,17 @@ form:hover{
   border: 3px solid  #ddd;
 }
 
+.right-panel form,input{
+   width: 400px;
+}
+
+.right-panel form,input:hover{
+    width: 600px;
+  transition-duration: 0.3s;
+}
+
 input, textarea {
-  width: 100%;
+  width: 500px;
   padding: 10px;
   margin-top: 10px;
   border: 1px solid #ddd;
@@ -434,34 +455,44 @@ input, textarea {
 }
 
  textarea:hover{
-  border: 1px solid rgb(14, 189, 145);
-  background: aqua; 
+   border: 1px solid rgb(99, 143, 172);
+   background: rgb(99, 102, 102); 
+   color: white;
    outline: none;
+   width: 550px;
+   transition-duration: 0.3s;
+  
 }
 
 input:hover{
-  border: 3px solid rgb(14, 189, 145);
-    background: aqua;
+   border: 1px solid rgb(99, 143, 172);
+   background: rgb(99, 102, 102); 
+   color: white;
+   width: 550px;
 }
 
-button {
+form button {
+  width: 100px;
   margin-top: 10px;
-  width: 200px;
   padding: 10px;
-  background: #4CAF50;
+  background: #579b59;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-    outline: none;
+  outline: none;
 }
 
-button:hover {
-  background: #06d310;
+form button:hover {
+  background: #25b62d;
   padding: 15px;
-
+  width: 200px;
+  transition-duration: 0.5s;
 }
 
+form button:active{
+    background: #04f010;
+}
 .contects hr{
   color: #21059c;
   margin-top: 100px;
